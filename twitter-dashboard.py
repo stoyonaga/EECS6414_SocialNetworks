@@ -10,7 +10,9 @@ import pandas as pd
 from tqdm import tqdm
 from collections import Counter
 import networkx as nx
+import powerlaw
 import ast
+
 
 
 
@@ -115,7 +117,6 @@ def plot_posting_users_of_month() -> None:
 def plot_tagged_users_of_month() -> None:
     tbm = tweets.loc[tweets['date'] == month]
     top_users = Counter(tbm['reply_to']).most_common(11)
-    print(top_users)
     users = {}
     for entry in top_users:
         if ast.literal_eval(entry[0]) != list():
@@ -157,13 +158,49 @@ def wordcloud_tweets() -> WordCloud:
     wv_all_tweets.generate(' '.join(tbm['tweet']))
     return wv_all_tweets
 
+def plot_power_law_distribution() -> px.scatter:
+  # If the majority of the scatter is a straight line, we are straight vibin'
+
+  degrees = []
+  power_fit = powerlaw.Fit([x[1] for x in G.degree])
+  for node, degree in G.degree:
+    degrees.append(degree)
+  degrees = Counter(degrees)
+  fig = px.scatter(
+    x = degrees.keys(),
+    y = degrees.values(),
+    title = f'Log Distribution of Graph (Alpha = {round(power_fit.alpha, 2)})',
+    labels = {
+      'x': 'Node Degree',
+      'y': 'Probability: p(k) = P(X = k)'
+    },
+    height=600
+  )
+  fig.update_xaxes(type='log')
+  fig.update_yaxes(type='log')
+  return fig
+
+def calculate_pagerank() -> str:
+    top_k_scored_users = sorted(nx.pagerank(G).items(), key = lambda x:x[1], reverse=True)
+    results = ''
+    for i in range(10):
+        results += f'@{top_k_scored_users[i][0]} ({round(top_k_scored_users[i][1], 4)})\n'
+    return results
+def calculate_hubs() -> str:
+    hubs = sorted(nx.hits(G)[0].items(), key = lambda x:x[1], reverse=True)
+    results = ''
+    for i in range(10):
+        results += f'@{hubs[i][0]} ({round(hubs[i][1], 4)})\n'
+    return results
+def calculate_authorities() -> str:
+    authorities = sorted(nx.hits(G)[1].items(), key = lambda x:x[1], reverse=True)
+    results = ''
+    for i in range(10):
+        results += f'@{authorities[i][0]} ({round(authorities[i][1], 4)})\n'
+    return results
 
 
 
-
-
-    
-    
 # ------------------------------------------------------------------------------------------------------------------------------
 
 st.set_page_config(
@@ -239,17 +276,57 @@ if __name__ == '__main__':
             st.write(wordcloud_tweets().to_image())
         with validity:
             st.plotly_chart(figure_or_data=plot_validity_of_month())
-
-
-
-
-
-
     
-        
+    st.subheader(
+        body = 'Graph Analytics & Visualization',
+        divider = 'rainbow'
+    )
 
+    gexf_file = st.radio(
+        'Select gexf file:',
+        [
+         'gexf\\vaccine_tweets_whole_graph.gexf',
+         'gexf\\vaccine_tweets_misinformation_graph.gexf'
+         ]
+    )
 
-
+    G = nx.read_gexf(gexf_file)
+    graph_assets = st.container()
+    with graph_assets:
+        image, pl = st.columns(2)
+        with image:
+            if gexf_file == 'gexf\\vaccine_tweets_whole_graph.gexf':
+                st.image('images\\vaccines_whole.png')
+            else:
+                st.image('images\\vaccines_misinformation.png')
+            st.write(f'Nodes: {G.number_of_nodes()}')
+            st.write(f'Edges: {G.number_of_edges()}')
+        with pl:
+            st.write(plot_power_law_distribution())
+    pagerank, authorities, hubs = st.columns(3)
+    with pagerank:
+        txt = st.text_area(
+            label = 'Pagerank',
+            value = calculate_pagerank(),
+            height = 250
+        )
+    with authorities:
+        txt = st.text_area(
+            label = 'Authorities',
+            value = calculate_authorities(),
+            height = 250
+        )
+    with hubs:
+        txt = st.text_area(
+            label = 'Hubs',
+            value = calculate_hubs(),
+            height = 250
+        )
+    
+    st.subheader(
+        body = 'LLM QA',
+        divider = 'rainbow'
+    )
 
     st.subheader(
         body = 'Resources',
@@ -258,6 +335,7 @@ if __name__ == '__main__':
 
     st.page_link("twitter-dashboard.py", label="Twitter", icon="🐦")
     st.page_link("pages\\reddit-dashboard.py", label="Reddit", icon="🅱️")
+    st.page_link("pages\\qa.py", label="QA Dashboard", icon="🤖")
 
 
    
