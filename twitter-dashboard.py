@@ -93,7 +93,7 @@ def plot_hashtags_of_month() -> None:
             'x': 'Count'
         },
         orientation = 'h',
-        title = 'Top Used Hashtags in {Month}',
+        title = f'Top Used Hashtags in {month}',
         height=400,
         width=400
         
@@ -140,7 +140,8 @@ def plot_validity_of_month() -> None:
         names = validity.keys(), 
         values = validity.values(),
         height = 400,
-        width = 400
+        width = 400,
+        title = 'Percentage of Tweets/Retweets with Misinformation'
         )
     return fig
 
@@ -323,23 +324,12 @@ if __name__ == '__main__':
             height = 250
         )
     
-    st.subheader(
-        body = 'LLM QA',
-        divider = 'rainbow'
-    )
 
     st.subheader(
-        body = 'Resources',
+        body = 'Pages',
         divider='rainbow'   
     )
 
     st.page_link("twitter-dashboard.py", label="Twitter", icon="🐦")
     st.page_link("pages\\reddit-dashboard.py", label="Reddit", icon="🅱️")
     st.page_link("pages\\qa.py", label="QA Dashboard", icon="🤖")
-
-
-   
-
-
-
-
