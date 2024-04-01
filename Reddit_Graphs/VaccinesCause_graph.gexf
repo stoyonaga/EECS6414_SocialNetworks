@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2024-04-01">
+    <creator>NetworkX 3.2.1</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <nodes>
+      <node id="Mariocraft6000" label="Mariocraft6000" />
+      <node id="Guildmarm18" label="Guildmarm18" />
+      <node id="sigismund1880" label="sigismund1880" />
+      <node id="PrestigiousProof" label="PrestigiousProof" />
+      <node id="xMasterMelonx" label="xMasterMelonx" />
+      <node id="Kerboq" label="Kerboq" />
+      <node id="Your_Cousin_Eddie" label="Your_Cousin_Eddie" />
+      <node id="l3lb0t" label="l3lb0t" />
+      <node id="haveaniceday8D" label="haveaniceday8D" />
+      <node id="xNovaz" label="xNovaz" />
+      <node id="antikama" label="antikama" />
+      <node id="nonbinarynonnie" label="nonbinarynonnie" />
+      <node id="epictetus1" label="epictetus1" />
+      <node id="Knighthonor" label="Knighthonor" />
+      <node id="fixibleguide189" label="fixibleguide189" />
+    </nodes>
+    <edges>
+      <edge source="Mariocraft6000" target="Guildmarm18" id="0" weight="10" />
+      <edge source="Mariocraft6000" target="sigismund1880" id="1" weight="2" />
+      <edge source="Mariocraft6000" target="PrestigiousProof" id="2" weight="12" />
+      <edge source="Mariocraft6000" target="xMasterMelonx" id="3" weight="30" />
+      <edge source="Mariocraft6000" target="Kerboq" id="4" weight="48" />
+      <edge source="Mariocraft6000" target="Your_Cousin_Eddie" id="5" weight="9" />
+      <edge source="Mariocraft6000" target="l3lb0t" id="6" weight="64" />
+      <edge source="Mariocraft6000" target="haveaniceday8D" id="7" weight="21" />
+      <edge source="Mariocraft6000" target="xNovaz" id="8" weight="15" />
+      <edge source="Mariocraft6000" target="antikama" id="9" weight="10" />
+      <edge source="Mariocraft6000" target="nonbinarynonnie" id="10" weight="12" />
+      <edge source="Mariocraft6000" target="epictetus1" id="11" weight="16" />
+      <edge source="Mariocraft6000" target="Knighthonor" id="12" weight="21" />
+      <edge source="Mariocraft6000" target="fixibleguide189" id="13" weight="39" />
+      <edge source="Guildmarm18" target="sigismund1880" id="14" weight="2" />
+      <edge source="Guildmarm18" target="PrestigiousProof" id="15" weight="12" />
+      <edge source="Guildmarm18" target="xMasterMelonx" id="16" weight="30" />
+      <edge source="Guildmarm18" target="Kerboq" id="17" weight="48" />
+      <edge source="Guildmarm18" target="Your_Cousin_Eddie" id="18" weight="9" />
+      <edge source="Guildmarm18" target="l3lb0t" id="19" weight="64" />
+      <edge source="Guildmarm18" target="haveaniceday8D" id="20" weight="21" />
+      <edge source="Guildmarm18" target="xNovaz" id="21" weight="15" />
+      <edge source="Guildmarm18" target="antikama" id="22" weight="10" />
+      <edge source="Guildmarm18" target="nonbinarynonnie" id="23" weight="12" />
+      <edge source="Guildmarm18" target="epictetus1" id="24" weight="16" />
+      <edge source="Guildmarm18" target="Knighthonor" id="25" weight="21" />
+      <edge source="Guildmarm18" target="fixibleguide189" id="26" weight="39" />
+      <edge source="sigismund1880" target="PrestigiousProof" id="27" weight="12" />
+      <edge source="sigismund1880" target="xMasterMelonx" id="28" weight="30" />
+      <edge source="sigismund1880" target="Kerboq" id="29" weight="48" />
+      <edge source="sigismund1880" target="Your_Cousin_Eddie" id="30" weight="9" />
+      <edge source="sigismund1880" target="l3lb0t" id="31" weight="64" />
+      <edge source="sigismund1880" target="haveaniceday8D" id="32" weight="21" />
+      <edge source="sigismund1880" target="xNovaz" id="33" weight="15" />
+      <edge source="sigismund1880" target="antikama" id="34" weight="10" />
+      <edge source="sigismund1880" target="nonbinarynonnie" id="35" weight="12" />
+      <edge source="sigismund1880" target="epictetus1" id="36" weight="16" />
+      <edge source="sigismund1880" target="Knighthonor" id="37" weight="21" />
+      <edge source="sigismund1880" target="fixibleguide189" id="38" weight="39" />
+      <edge source="PrestigiousProof" target="xMasterMelonx" id="39" weight="30" />
+      <edge source="PrestigiousProof" target="Kerboq" id="40" weight="48" />
+      <edge source="PrestigiousProof" target="Your_Cousin_Eddie" id="41" weight="9" />
+      <edge source="PrestigiousProof" target="l3lb0t" id="42" weight="64" />
+      <edge source="PrestigiousProof" target="haveaniceday8D" id="43" weight="21" />
+      <edge source="PrestigiousProof" target="xNovaz" id="44" weight="15" />
+      <edge source="PrestigiousProof" target="antikama" id="45" weight="10" />
+      <edge source="PrestigiousProof" target="nonbinarynonnie" id="46" weight="12" />
+      <edge source="PrestigiousProof" target="epictetus1" id="47" weight="16" />
+      <edge source="PrestigiousProof" target="Knighthonor" id="48" weight="21" />
+      <edge source="PrestigiousProof" target="fixibleguide189" id="49" weight="39" />
+      <edge source="xMasterMelonx" target="Kerboq" id="50" weight="48" />
+      <edge source="xMasterMelonx" target="Your_Cousin_Eddie" id="51" weight="9" />
+      <edge source="xMasterMelonx" target="l3lb0t" id="52" weight="64" />
+      <edge source="xMasterMelonx" target="haveaniceday8D" id="53" weight="21" />
+      <edge source="xMasterMelonx" target="xNovaz" id="54" weight="15" />
+      <edge source="xMasterMelonx" target="antikama" id="55" weight="10" />
+      <edge source="xMasterMelonx" target="nonbinarynonnie" id="56" weight="12" />
+      <edge source="xMasterMelonx" target="epictetus1" id="57" weight="16" />
+      <edge source="xMasterMelonx" target="Knighthonor" id="58" weight="21" />
+      <edge source="xMasterMelonx" target="fixibleguide189" id="59" weight="39" />
+      <edge source="Kerboq" target="Your_Cousin_Eddie" id="60" weight="9" />
+      <edge source="Kerboq" target="l3lb0t" id="61" weight="64" />
+      <edge source="Kerboq" target="haveaniceday8D" id="62" weight="21" />
+      <edge source="Kerboq" target="xNovaz" id="63" weight="15" />
+      <edge source="Kerboq" target="antikama" id="64" weight="10" />
+      <edge source="Kerboq" target="nonbinarynonnie" id="65" weight="12" />
+      <edge source="Kerboq" target="epictetus1" id="66" weight="16" />
+      <edge source="Kerboq" target="Knighthonor" id="67" weight="21" />
+      <edge source="Kerboq" target="fixibleguide189" id="68" weight="39" />
+      <edge source="Your_Cousin_Eddie" target="l3lb0t" id="69" weight="64" />
+      <edge source="Your_Cousin_Eddie" target="haveaniceday8D" id="70" weight="21" />
+      <edge source="Your_Cousin_Eddie" target="xNovaz" id="71" weight="15" />
+      <edge source="Your_Cousin_Eddie" target="antikama" id="72" weight="10" />
+      <edge source="Your_Cousin_Eddie" target="nonbinarynonnie" id="73" weight="12" />
+      <edge source="Your_Cousin_Eddie" target="epictetus1" id="74" weight="16" />
+      <edge source="Your_Cousin_Eddie" target="Knighthonor" id="75" weight="21" />
+      <edge source="Your_Cousin_Eddie" target="fixibleguide189" id="76" weight="39" />
+      <edge source="l3lb0t" target="haveaniceday8D" id="77" weight="21" />
+      <edge source="l3lb0t" target="xNovaz" id="78" weight="15" />
+      <edge source="l3lb0t" target="antikama" id="79" weight="10" />
+      <edge source="l3lb0t" target="nonbinarynonnie" id="80" weight="12" />
+      <edge source="l3lb0t" target="epictetus1" id="81" weight="16" />
+      <edge source="l3lb0t" target="Knighthonor" id="82" weight="21" />
+      <edge source="l3lb0t" target="fixibleguide189" id="83" weight="39" />
+      <edge source="haveaniceday8D" target="xNovaz" id="84" weight="15" />
+      <edge source="haveaniceday8D" target="antikama" id="85" weight="10" />
+      <edge source="haveaniceday8D" target="nonbinarynonnie" id="86" weight="12" />
+      <edge source="haveaniceday8D" target="epictetus1" id="87" weight="16" />
+      <edge source="haveaniceday8D" target="Knighthonor" id="88" weight="21" />
+      <edge source="haveaniceday8D" target="fixibleguide189" id="89" weight="39" />
+      <edge source="xNovaz" target="antikama" id="90" weight="10" />
+      <edge source="xNovaz" target="nonbinarynonnie" id="91" weight="12" />
+      <edge source="xNovaz" target="epictetus1" id="92" weight="16" />
+      <edge source="xNovaz" target="Knighthonor" id="93" weight="21" />
+      <edge source="xNovaz" target="fixibleguide189" id="94" weight="39" />
+      <edge source="antikama" target="nonbinarynonnie" id="95" weight="12" />
+      <edge source="antikama" target="epictetus1" id="96" weight="16" />
+      <edge source="antikama" target="Knighthonor" id="97" weight="21" />
+      <edge source="antikama" target="fixibleguide189" id="98" weight="39" />
+      <edge source="nonbinarynonnie" target="epictetus1" id="99" weight="16" />
+      <edge source="nonbinarynonnie" target="Knighthonor" id="100" weight="21" />
+      <edge source="nonbinarynonnie" target="fixibleguide189" id="101" weight="39" />
+      <edge source="epictetus1" target="Knighthonor" id="102" weight="21" />
+      <edge source="epictetus1" target="fixibleguide189" id="103" weight="39" />
+      <edge source="Knighthonor" target="fixibleguide189" id="104" weight="39" />
+    </edges>
+  </graph>
+</gexf>

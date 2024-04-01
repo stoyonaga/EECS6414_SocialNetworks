@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2024-04-01">
+    <creator>NetworkX 3.2.1</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <nodes>
+      <node id="Atypical_RN" label="Atypical_RN" />
+      <node id="rustyrussell2015" label="rustyrussell2015" />
+      <node id="KyletheAngryAncap" label="KyletheAngryAncap" />
+      <node id="Motiv311" label="Motiv311" />
+      <node id="WhatsGnuPussycat" label="WhatsGnuPussycat" />
+      <node id="AutisticShoeshineB0y" label="AutisticShoeshineB0y" />
+      <node id="bear-in-exile" label="bear-in-exile" />
+      <node id="JohnnyKnifefight" label="JohnnyKnifefight" />
+      <node id="CalculateAndDestroy" label="CalculateAndDestroy" />
+      <node id="waytogoradar2" label="waytogoradar2" />
+      <node id="Nt_politicallyc" label="Nt_politicallyc" />
+      <node id="Vincent019" label="Vincent019" />
+      <node id="spaceclown99" label="spaceclown99" />
+      <node id="Failrunner13" label="Failrunner13" />
+      <node id="Evan2Blade" label="Evan2Blade" />
+      <node id="Boltupandhold" label="Boltupandhold" />
+      <node id="Dontforgayjesus" label="Dontforgayjesus" />
+      <node id="CurvySexretLady" label="CurvySexretLady" />
+      <node id="MadameApathy" label="MadameApathy" />
+    </nodes>
+    <edges>
+      <edge source="Atypical_RN" target="rustyrussell2015" id="0" weight="24" />
+      <edge source="Atypical_RN" target="KyletheAngryAncap" id="1" weight="22" />
+      <edge source="Atypical_RN" target="Motiv311" id="2" weight="20" />
+      <edge source="Atypical_RN" target="WhatsGnuPussycat" id="3" weight="9" />
+      <edge source="Atypical_RN" target="AutisticShoeshineB0y" id="4" weight="9" />
+      <edge source="Atypical_RN" target="bear-in-exile" id="5" weight="32" />
+      <edge source="Atypical_RN" target="JohnnyKnifefight" id="6" weight="44" />
+      <edge source="Atypical_RN" target="CalculateAndDestroy" id="7" weight="14" />
+      <edge source="Atypical_RN" target="waytogoradar2" id="8" weight="22" />
+      <edge source="Atypical_RN" target="Nt_politicallyc" id="9" weight="4" />
+      <edge source="Atypical_RN" target="Vincent019" id="10" weight="29" />
+      <edge source="Atypical_RN" target="spaceclown99" id="11" weight="39" />
+      <edge source="Atypical_RN" target="Failrunner13" id="12" weight="11" />
+      <edge source="Atypical_RN" target="Evan2Blade" id="13" weight="33" />
+      <edge source="Atypical_RN" target="Boltupandhold" id="14" weight="27" />
+      <edge source="Atypical_RN" target="Dontforgayjesus" id="15" weight="17" />
+      <edge source="Atypical_RN" target="CurvySexretLady" id="16" weight="20" />
+      <edge source="Atypical_RN" target="MadameApathy" id="17" weight="35" />
+      <edge source="rustyrussell2015" target="KyletheAngryAncap" id="18" weight="22" />
+      <edge source="rustyrussell2015" target="Motiv311" id="19" weight="20" />
+      <edge source="rustyrussell2015" target="WhatsGnuPussycat" id="20" weight="9" />
+      <edge source="rustyrussell2015" target="AutisticShoeshineB0y" id="21" weight="9" />
+      <edge source="rustyrussell2015" target="bear-in-exile" id="22" weight="32" />
+      <edge source="rustyrussell2015" target="JohnnyKnifefight" id="23" weight="44" />
+      <edge source="rustyrussell2015" target="CalculateAndDestroy" id="24" weight="14" />
+      <edge source="rustyrussell2015" target="waytogoradar2" id="25" weight="22" />
+      <edge source="rustyrussell2015" target="Nt_politicallyc" id="26" weight="4" />
+      <edge source="rustyrussell2015" target="Vincent019" id="27" weight="29" />
+      <edge source="rustyrussell2015" target="spaceclown99" id="28" weight="39" />
+      <edge source="rustyrussell2015" target="Failrunner13" id="29" weight="11" />
+      <edge source="rustyrussell2015" target="Evan2Blade" id="30" weight="33" />
+      <edge source="rustyrussell2015" target="Boltupandhold" id="31" weight="27" />
+      <edge source="rustyrussell2015" target="Dontforgayjesus" id="32" weight="17" />
+      <edge source="rustyrussell2015" target="CurvySexretLady" id="33" weight="20" />
+      <edge source="rustyrussell2015" target="MadameApathy" id="34" weight="35" />
+      <edge source="KyletheAngryAncap" target="Motiv311" id="35" weight="20" />
+      <edge source="KyletheAngryAncap" target="WhatsGnuPussycat" id="36" weight="9" />
+      <edge source="KyletheAngryAncap" target="AutisticShoeshineB0y" id="37" weight="9" />
+      <edge source="KyletheAngryAncap" target="bear-in-exile" id="38" weight="32" />
+      <edge source="KyletheAngryAncap" target="JohnnyKnifefight" id="39" weight="44" />
+      <edge source="KyletheAngryAncap" target="CalculateAndDestroy" id="40" weight="14" />
+      <edge source="KyletheAngryAncap" target="waytogoradar2" id="41" weight="22" />
+      <edge source="KyletheAngryAncap" target="Nt_politicallyc" id="42" weight="4" />
+      <edge source="KyletheAngryAncap" target="Vincent019" id="43" weight="29" />
+      <edge source="KyletheAngryAncap" target="spaceclown99" id="44" weight="39" />
+      <edge source="KyletheAngryAncap" target="Failrunner13" id="45" weight="11" />
+      <edge source="KyletheAngryAncap" target="Evan2Blade" id="46" weight="33" />
+      <edge source="KyletheAngryAncap" target="Boltupandhold" id="47" weight="27" />
+      <edge source="KyletheAngryAncap" target="Dontforgayjesus" id="48" weight="17" />
+      <edge source="KyletheAngryAncap" target="CurvySexretLady" id="49" weight="20" />
+      <edge source="KyletheAngryAncap" target="MadameApathy" id="50" weight="35" />
+      <edge source="Motiv311" target="WhatsGnuPussycat" id="51" weight="9" />
+      <edge source="Motiv311" target="AutisticShoeshineB0y" id="52" weight="9" />
+      <edge source="Motiv311" target="bear-in-exile" id="53" weight="32" />
+      <edge source="Motiv311" target="JohnnyKnifefight" id="54" weight="44" />
+      <edge source="Motiv311" target="CalculateAndDestroy" id="55" weight="14" />
+      <edge source="Motiv311" target="waytogoradar2" id="56" weight="22" />
+      <edge source="Motiv311" target="Nt_politicallyc" id="57" weight="4" />
+      <edge source="Motiv311" target="Vincent019" id="58" weight="29" />
+      <edge source="Motiv311" target="spaceclown99" id="59" weight="39" />
+      <edge source="Motiv311" target="Failrunner13" id="60" weight="11" />
+      <edge source="Motiv311" target="Evan2Blade" id="61" weight="33" />
+      <edge source="Motiv311" target="Boltupandhold" id="62" weight="27" />
+      <edge source="Motiv311" target="Dontforgayjesus" id="63" weight="17" />
+      <edge source="Motiv311" target="CurvySexretLady" id="64" weight="20" />
+      <edge source="Motiv311" target="MadameApathy" id="65" weight="35" />
+      <edge source="WhatsGnuPussycat" target="AutisticShoeshineB0y" id="66" weight="9" />
+      <edge source="WhatsGnuPussycat" target="bear-in-exile" id="67" weight="32" />
+      <edge source="WhatsGnuPussycat" target="JohnnyKnifefight" id="68" weight="44" />
+      <edge source="WhatsGnuPussycat" target="CalculateAndDestroy" id="69" weight="14" />
+      <edge source="WhatsGnuPussycat" target="waytogoradar2" id="70" weight="22" />
+      <edge source="WhatsGnuPussycat" target="Nt_politicallyc" id="71" weight="4" />
+      <edge source="WhatsGnuPussycat" target="Vincent019" id="72" weight="29" />
+      <edge source="WhatsGnuPussycat" target="spaceclown99" id="73" weight="39" />
+      <edge source="WhatsGnuPussycat" target="Failrunner13" id="74" weight="11" />
+      <edge source="WhatsGnuPussycat" target="Evan2Blade" id="75" weight="33" />
+      <edge source="WhatsGnuPussycat" target="Boltupandhold" id="76" weight="27" />
+      <edge source="WhatsGnuPussycat" target="Dontforgayjesus" id="77" weight="17" />
+      <edge source="WhatsGnuPussycat" target="CurvySexretLady" id="78" weight="20" />
+      <edge source="WhatsGnuPussycat" target="MadameApathy" id="79" weight="35" />
+      <edge source="AutisticShoeshineB0y" target="bear-in-exile" id="80" weight="32" />
+      <edge source="AutisticShoeshineB0y" target="JohnnyKnifefight" id="81" weight="44" />
+      <edge source="AutisticShoeshineB0y" target="CalculateAndDestroy" id="82" weight="14" />
+      <edge source="AutisticShoeshineB0y" target="waytogoradar2" id="83" weight="22" />
+      <edge source="AutisticShoeshineB0y" target="Nt_politicallyc" id="84" weight="4" />
+      <edge source="AutisticShoeshineB0y" target="Vincent019" id="85" weight="29" />
+      <edge source="AutisticShoeshineB0y" target="spaceclown99" id="86" weight="39" />
+      <edge source="AutisticShoeshineB0y" target="Failrunner13" id="87" weight="11" />
+      <edge source="AutisticShoeshineB0y" target="Evan2Blade" id="88" weight="33" />
+      <edge source="AutisticShoeshineB0y" target="Boltupandhold" id="89" weight="27" />
+      <edge source="AutisticShoeshineB0y" target="Dontforgayjesus" id="90" weight="17" />
+      <edge source="AutisticShoeshineB0y" target="CurvySexretLady" id="91" weight="20" />
+      <edge source="AutisticShoeshineB0y" target="MadameApathy" id="92" weight="35" />
+      <edge source="bear-in-exile" target="JohnnyKnifefight" id="93" weight="44" />
+      <edge source="bear-in-exile" target="CalculateAndDestroy" id="94" weight="14" />
+      <edge source="bear-in-exile" target="waytogoradar2" id="95" weight="22" />
+      <edge source="bear-in-exile" target="Nt_politicallyc" id="96" weight="4" />
+      <edge source="bear-in-exile" target="Vincent019" id="97" weight="29" />
+      <edge source="bear-in-exile" target="spaceclown99" id="98" weight="39" />
+      <edge source="bear-in-exile" target="Failrunner13" id="99" weight="11" />
+      <edge source="bear-in-exile" target="Evan2Blade" id="100" weight="33" />
+      <edge source="bear-in-exile" target="Boltupandhold" id="101" weight="27" />
+      <edge source="bear-in-exile" target="Dontforgayjesus" id="102" weight="17" />
+      <edge source="bear-in-exile" target="CurvySexretLady" id="103" weight="20" />
+      <edge source="bear-in-exile" target="MadameApathy" id="104" weight="35" />
+      <edge source="JohnnyKnifefight" target="CalculateAndDestroy" id="105" weight="14" />
+      <edge source="JohnnyKnifefight" target="waytogoradar2" id="106" weight="22" />
+      <edge source="JohnnyKnifefight" target="Nt_politicallyc" id="107" weight="4" />
+      <edge source="JohnnyKnifefight" target="Vincent019" id="108" weight="29" />
+      <edge source="JohnnyKnifefight" target="spaceclown99" id="109" weight="39" />
+      <edge source="JohnnyKnifefight" target="Failrunner13" id="110" weight="11" />
+      <edge source="JohnnyKnifefight" target="Evan2Blade" id="111" weight="33" />
+      <edge source="JohnnyKnifefight" target="Boltupandhold" id="112" weight="27" />
+      <edge source="JohnnyKnifefight" target="Dontforgayjesus" id="113" weight="17" />
+      <edge source="JohnnyKnifefight" target="CurvySexretLady" id="114" weight="20" />
+      <edge source="JohnnyKnifefight" target="MadameApathy" id="115" weight="35" />
+      <edge source="CalculateAndDestroy" target="waytogoradar2" id="116" weight="22" />
+      <edge source="CalculateAndDestroy" target="Nt_politicallyc" id="117" weight="4" />
+      <edge source="CalculateAndDestroy" target="Vincent019" id="118" weight="29" />
+      <edge source="CalculateAndDestroy" target="spaceclown99" id="119" weight="39" />
+      <edge source="CalculateAndDestroy" target="Failrunner13" id="120" weight="11" />
+      <edge source="CalculateAndDestroy" target="Evan2Blade" id="121" weight="33" />
+      <edge source="CalculateAndDestroy" target="Boltupandhold" id="122" weight="27" />
+      <edge source="CalculateAndDestroy" target="Dontforgayjesus" id="123" weight="17" />
+      <edge source="CalculateAndDestroy" target="CurvySexretLady" id="124" weight="20" />
+      <edge source="CalculateAndDestroy" target="MadameApathy" id="125" weight="35" />
+      <edge source="waytogoradar2" target="Nt_politicallyc" id="126" weight="4" />
+      <edge source="waytogoradar2" target="Vincent019" id="127" weight="29" />
+      <edge source="waytogoradar2" target="spaceclown99" id="128" weight="39" />
+      <edge source="waytogoradar2" target="Failrunner13" id="129" weight="11" />
+      <edge source="waytogoradar2" target="Evan2Blade" id="130" weight="33" />
+      <edge source="waytogoradar2" target="Boltupandhold" id="131" weight="27" />
+      <edge source="waytogoradar2" target="Dontforgayjesus" id="132" weight="17" />
+      <edge source="waytogoradar2" target="CurvySexretLady" id="133" weight="20" />
+      <edge source="waytogoradar2" target="MadameApathy" id="134" weight="35" />
+      <edge source="Nt_politicallyc" target="Vincent019" id="135" weight="29" />
+      <edge source="Nt_politicallyc" target="spaceclown99" id="136" weight="39" />
+      <edge source="Nt_politicallyc" target="Failrunner13" id="137" weight="11" />
+      <edge source="Nt_politicallyc" target="Evan2Blade" id="138" weight="33" />
+      <edge source="Nt_politicallyc" target="Boltupandhold" id="139" weight="27" />
+      <edge source="Nt_politicallyc" target="Dontforgayjesus" id="140" weight="17" />
+      <edge source="Nt_politicallyc" target="CurvySexretLady" id="141" weight="20" />
+      <edge source="Nt_politicallyc" target="MadameApathy" id="142" weight="35" />
+      <edge source="Vincent019" target="spaceclown99" id="143" weight="39" />
+      <edge source="Vincent019" target="Failrunner13" id="144" weight="11" />
+      <edge source="Vincent019" target="Evan2Blade" id="145" weight="33" />
+      <edge source="Vincent019" target="Boltupandhold" id="146" weight="27" />
+      <edge source="Vincent019" target="Dontforgayjesus" id="147" weight="17" />
+      <edge source="Vincent019" target="CurvySexretLady" id="148" weight="20" />
+      <edge source="Vincent019" target="MadameApathy" id="149" weight="35" />
+      <edge source="spaceclown99" target="Failrunner13" id="150" weight="11" />
+      <edge source="spaceclown99" target="Evan2Blade" id="151" weight="33" />
+      <edge source="spaceclown99" target="Boltupandhold" id="152" weight="27" />
+      <edge source="spaceclown99" target="Dontforgayjesus" id="153" weight="17" />
+      <edge source="spaceclown99" target="CurvySexretLady" id="154" weight="20" />
+      <edge source="spaceclown99" target="MadameApathy" id="155" weight="35" />
+      <edge source="Failrunner13" target="Evan2Blade" id="156" weight="33" />
+      <edge source="Failrunner13" target="Boltupandhold" id="157" weight="27" />
+      <edge source="Failrunner13" target="Dontforgayjesus" id="158" weight="17" />
+      <edge source="Failrunner13" target="CurvySexretLady" id="159" weight="20" />
+      <edge source="Failrunner13" target="MadameApathy" id="160" weight="35" />
+      <edge source="Evan2Blade" target="Boltupandhold" id="161" weight="27" />
+      <edge source="Evan2Blade" target="Dontforgayjesus" id="162" weight="17" />
+      <edge source="Evan2Blade" target="CurvySexretLady" id="163" weight="20" />
+      <edge source="Evan2Blade" target="MadameApathy" id="164" weight="35" />
+      <edge source="Boltupandhold" target="Dontforgayjesus" id="165" weight="17" />
+      <edge source="Boltupandhold" target="CurvySexretLady" id="166" weight="20" />
+      <edge source="Boltupandhold" target="MadameApathy" id="167" weight="35" />
+      <edge source="Dontforgayjesus" target="CurvySexretLady" id="168" weight="20" />
+      <edge source="Dontforgayjesus" target="MadameApathy" id="169" weight="35" />
+      <edge source="CurvySexretLady" target="MadameApathy" id="170" weight="35" />
+    </edges>
+  </graph>
+</gexf>
