@@ -21,9 +21,13 @@ import matplotlib.pyplot as plt
 import wordcloud
 from wordcloud import WordCloud, STOPWORDS
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
+from PIL import image
 
 months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
+def wordcloud_image(month):
+    image = Image.open(month + "_wc.png")
+    
 st.set_page_config(
     page_title='Reddit Dashboard',
     page_icon=':bird:',
@@ -36,7 +40,8 @@ st.set_page_config(
         )
 
  month = st.selectbox(
-        label = 'Please select a month',
+        label = 'Please select a month', 
         options = months
     )
+wordcloud_image(month)
 
