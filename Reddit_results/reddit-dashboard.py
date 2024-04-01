@@ -27,21 +27,24 @@ months = ["January", "February", "March", "April", "May", "June", "July", "Augus
 
 def wordcloud_image(month):
     image = Image.open(month + "_wc.png")
-    
-st.set_page_config(
+
+if __name__ == '__main__':
+    with st.spinner('Please wait while resources are being generated...'):
+    st.set_page_config(
     page_title='Reddit Dashboard',
     page_icon=':bird:',
     layout='wide'
 )
 
- st.header(
+     st.header(
         body = 'GS/EECS 6414 Reddit Dashboard',
         divider='rainbow'
         )
 
- month = st.selectbox(
+     month = st.selectbox(
         label = 'Please select a month', 
         options = months
     )
+
 wordcloud_image(month)
 
