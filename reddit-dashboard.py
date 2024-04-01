@@ -22,6 +22,7 @@ import wordcloud
 from wordcloud import WordCloud, STOPWORDS
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
+months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
 st.set_page_config(
     page_title='Reddit Dashboard',
@@ -30,12 +31,12 @@ st.set_page_config(
 )
 
  st.header(
-        body = 'GS/EECS 6414 Twitter Dashboard',
+        body = 'GS/EECS 6414 Reddit Dashboard',
         divider='rainbow'
         )
 
  month = st.selectbox(
         label = 'Please select a month',
-        options = months.values()
+        options = months
     )
 
