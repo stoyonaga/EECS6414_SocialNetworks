@@ -26,6 +26,18 @@ from PIL import Image
 months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 subreddits = ["AntiVaccineMemes", "VaccineHomicide", "VaccinesCause", "VaccineGasLight", "VaccineCultVictims"]
 
+def get_key_figures(subreddit):
+    graph = nx.read_gexf("Reddit_Graphs/" + subreddit + "_graph.gexf")
+    pr = nx.pagerank(graph)
+    top_10_pr = sorted(pr.items(), key = lambda x: x[1], reverse = True)[:10]
+    hubs, auth = nx.hits(graph)
+    top_10_hubs = sorted(hubs.items(), key = lambda x: x[1], reverse = True)[:10]
+    top_10_auth = sorted(auth.items(), key = lambda x: x[1], reverse = True)[:10]
+    st.table([{'User': user, "Pagerank score contribution": contribution} for user, contribution in top_10_pr])
+    st.table([{'User': user, "Hubs score contribution": contribution} for user, contribution in top_10_hubs])
+    st.table([{'User': user, "Authorities score contribution": contribution} for user, contribution in top_10_auth])
+
+
 def all_images(month):
     #image = Image.open("Reddit_results/" + month + "_wc.png")
     st.title("WordCloud")
@@ -49,7 +61,7 @@ if __name__ == '__main__':
     st.write(
         """
         The goal of our project is to create a robust multifold analytics and visualization system for COVID misinformation 
-        in Twitter. Firstly, we will analyze several datasets which contain social media posts about COVID-19 in addition to 
+        in Reddit. Firstly, we will analyze several datasets which contain social media posts about COVID-19 in addition to 
         user-level demographics (i.e., Number of Followers, Biography, etc.,). From this, we will apply NLP techniques which augment 
         the available datasets for data mining and visualization purposes. 
 
@@ -75,6 +87,7 @@ if __name__ == '__main__':
             body = 'GS/EECS 6414 Reddit Dashboard',
             divider='rainbow'
             )
+    st.title("Sentiment Analysis")
     month = st.selectbox(
             label = 'Please select a month', 
             options = months
@@ -90,7 +103,7 @@ if __name__ == '__main__':
     )
 
     subreddit_images(subreddit)
-
+    get_key_figures(subreddit)
     st.page_link("twitter-dashboard.py", label="Twitter", icon="🐦")
     st.page_link("pages\\reddit-dashboard.py", label="Reddit", icon="🅱️")
     st.page_link("pages\\qa.py", label="QA Dashboard", icon="🤖")
