@@ -38,7 +38,7 @@ def get_key_figures(subreddit):
     choice = st.radio("Attribute Analysis:", ('PageRank', 'Hubs', 'Authorities', 'Modularity', 'Diameter'))
     if choice == 'PageRank':
         df = pd.DataFrame(columns=('User', 'Pagerank score contribution'))
-        counting = 0
+        counting = 1
         for user, contribution in top_10_pr:
             df.loc[counting] = [user,contribution]
             counting += 1
@@ -46,7 +46,7 @@ def get_key_figures(subreddit):
         st.table(df)
     elif choice == 'Hubs':  
         df = pd.DataFrame(columns=('User', 'Hubs score contribution'))
-        counting = 0
+        counting = 1
         for user, contribution in top_10_hubs:
             df.loc[counting] = [user,contribution]
             counting += 1
@@ -57,7 +57,7 @@ def get_key_figures(subreddit):
         st.write("Network diameter calculated as: " + str(nx.diameter(graph)))
     else:
         df = pd.DataFrame(columns = ('User', 'Authorities score contribution'))
-        counting = 0
+        counting = 1
         for user, contribution in top_10_auth:
             df.loc[counting] = [user,contribution]
             counting += 1
