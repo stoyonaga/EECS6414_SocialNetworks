@@ -1,4 +1,4 @@
-# GS/EECS 6414 Final Project: Social Networks - The Tracking of COVID-19 Misinformation Using NLP and Graph-based Approaches
+# GS/EECS 6414 Final Project: Social Networks - The Tracking of COVID-19 Misinformation Using NLP and Graph-based Approaches (Winter 2024)
 
 ## Abstract
 Misinformation during the COVID-19 pandemic resulted in many unnecessary infections, hospitalizations, and fatalities [10]. This is a trend that has been seen in past health epidemics [11, 12]. Our work aims to study the spread of COVID-19 misinformation on social media platforms such as Twitter and Reddit through a Natural Language Processing (NLP) and Graph-based approach. We use NetworkX, Gephi, Streamlit, Plotly, and Large Language Models to build a comprehensive analytics and visualization system that that is capable of extracting core metrics identifying malicious users in the social network. Lastly, our results are consistent with previous work
