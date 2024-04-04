@@ -23,6 +23,7 @@ from wordcloud import WordCloud, STOPWORDS
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from PIL import Image
 from networkx import community
+import statistics
 
 months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 subreddits = ["AntiVaccineMemes", "VaccineHomicide", "VaccinesCause", "VaccineGasLight", "VaccineCultVictims"]
@@ -39,18 +40,25 @@ def get_key_figures(subreddit):
     if choice == 'PageRank':
         df = pd.DataFrame(columns=('User', 'Pagerank score contribution'))
         counting = 1
+        array = []
         for user, contribution in top_10_pr:
+            array.append(contribution)
             df.loc[counting] = [user,contribution]
             counting += 1
         
         st.table(df)
+        st.write("The s.d of top 10 PageRanks is " + str(statistics.stdev(array)))
+
     elif choice == 'Hubs':  
         df = pd.DataFrame(columns=('User', 'Hubs score contribution'))
         counting = 1
+        array = []
         for user, contribution in top_10_hubs:
+            array.append(contribution)
             df.loc[counting] = [user,contribution]
             counting += 1
         st.table(df)
+        st.write("The s.d of top 10 Hubs is " + str(statistics.stdev(array)))
     elif choice == 'Modularity':
         st.write("Modularity calculated as: " + str(modularity))
     elif choice == 'Diameter':
@@ -58,10 +66,15 @@ def get_key_figures(subreddit):
     else:
         df = pd.DataFrame(columns = ('User', 'Authorities score contribution'))
         counting = 1
+        array = []
         for user, contribution in top_10_auth:
+            array.append(contribution)
             df.loc[counting] = [user,contribution]
             counting += 1
         st.table(df)
+        
+        st.write("The s.d of top 10 Authorities is " + str(statistics.stdev(array)))
+
 def all_images(month):
     #image = Image.open("Reddit_results/" + month + "_wc.png")
     st.title("WordCloud")
