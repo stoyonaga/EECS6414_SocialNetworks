@@ -19,4 +19,4 @@ pip install pillow
 
 ## Final Deliverables
 - For access to our written report, please contact us!
-- The slides can be accessed [here](https://github.com/stoyonaga/EECS6414_SocialNetworks/blob/main/presentation/1-presentation-final-slides.pdf). 
+- The midterm presentation can be found [here](https://github.com/stoyonaga/EECS6414_SocialNetworks/blob/main/presentation/1-presentation.pdf). For access to our final slides with video demos of the user interface, please contact us :)
