@@ -22,6 +22,7 @@ import wordcloud
 from wordcloud import WordCloud, STOPWORDS
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from PIL import Image
+from networkx import community
 
 months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 subreddits = ["AntiVaccineMemes", "VaccineHomicide", "VaccinesCause", "VaccineGasLight", "VaccineCultVictims"]
@@ -29,14 +30,23 @@ subreddits = ["AntiVaccineMemes", "VaccineHomicide", "VaccinesCause", "VaccineGa
 def get_key_figures(subreddit):
     graph = nx.read_gexf("Reddit_Graphs/" + subreddit + "_graph.gexf")
     pr = nx.pagerank(graph)
-    top_10_pr = sorted(pr.items(), key = lambda x: x[1], reverse = True)[:10]
     hubs, auth = nx.hits(graph)
+    top_10_pr = sorted(pr.items(), key = lambda x: x[1], reverse = True)[:10]
     top_10_hubs = sorted(hubs.items(), key = lambda x: x[1], reverse = True)[:10]
     top_10_auth = sorted(auth.items(), key = lambda x: x[1], reverse = True)[:10]
-    st.table([{'User': user, "Pagerank score contribution": contribution} for user, contribution in top_10_pr])
-    st.table([{'User': user, "Hubs score contribution": contribution} for user, contribution in top_10_hubs])
-    st.table([{'User': user, "Authorities score contribution": contribution} for user, contribution in top_10_auth])
-
+    modularity = community.modularity(graph, community.louvain_communities(graph, resolution=5))
+    choice = st.radio("Attribute Analysis:", ('PageRank', 'Hubs', 'Authorities', 'Modularity', 'Diameter'))
+    if choice == 'PageRank':
+        st.table([{'User': user, "Pagerank score contribution": contribution} for user, contribution in top_10_pr])
+    elif choice == 'Hubs':  
+        st.table([{'User': user, "Hubs score contribution": contribution} for user, contribution in top_10_hubs])
+    elif choice == 'Modularity':
+        st.write("Modularity calculated as: " + str(modularity))
+    elif choice == 'Diameter':
+        st.write("Network diameter calculated as: " + str(nx.diameter(graph)))
+    else:
+        st.table([{'User': user, "Authorities score contribution": contribution} for user, contribution in top_10_auth])
+    
 
 def all_images(month):
     #image = Image.open("Reddit_results/" + month + "_wc.png")
@@ -45,7 +55,7 @@ def all_images(month):
     st.title("Sentiment Pie Chart")
     st.image("Reddit_results/" + month + "_pie.png", width = 500)
 def subreddit_images(subreddit):
-    st.title("Common malicious subreddits between users")
+    st.title("Common malicious subreddits active in between users")
     st.image("Reddit_results/" + subreddit + ".png", width=500)
 if __name__ == '__main__':
     with st.spinner('Please wait while resources are being generated...'):
