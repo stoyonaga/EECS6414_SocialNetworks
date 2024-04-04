@@ -37,17 +37,31 @@ def get_key_figures(subreddit):
     modularity = community.modularity(graph, community.louvain_communities(graph, resolution=5))
     choice = st.radio("Attribute Analysis:", ('PageRank', 'Hubs', 'Authorities', 'Modularity', 'Diameter'))
     if choice == 'PageRank':
-        st.table([{'User': user, "Pagerank score contribution": contribution} for user, contribution in top_10_pr])
+        df = pd.DataFrame(columns=('User', 'Pagerank score contribution'))
+        counting = 0
+        for user, contribution in top_10_pr:
+            df.loc[counting] = [user,contribution]
+            counting += 1
+        
+        st.table(df)
     elif choice == 'Hubs':  
-        st.table([{'User': user, "Hubs score contribution": contribution} for user, contribution in top_10_hubs])
+        df = pd.DataFrame(columns=('User', 'Hubs score contribution'))
+        counting = 0
+        for user, contribution in top_10_hubs:
+            df.loc[counting] = [user,contribution]
+            counting += 1
+        st.table(df)
     elif choice == 'Modularity':
         st.write("Modularity calculated as: " + str(modularity))
     elif choice == 'Diameter':
         st.write("Network diameter calculated as: " + str(nx.diameter(graph)))
     else:
-        st.table([{'User': user, "Authorities score contribution": contribution} for user, contribution in top_10_auth])
-    
-
+        df = pd.DataFrame(columns = ('User', 'Authorities score contribution'))
+        counting = 0
+        for user, contribution in top_10_auth:
+            df.loc[counting] = [user,contribution]
+            counting += 1
+        st.table(df)
 def all_images(month):
     #image = Image.open("Reddit_results/" + month + "_wc.png")
     st.title("WordCloud")
