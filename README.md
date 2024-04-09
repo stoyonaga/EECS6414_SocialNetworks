@@ -20,8 +20,13 @@ pip install praw
 pip install nltk
 pip install matplotlib
 pip install pillow
+pip install transformers
 ```
 2. Unfortunately, the finetuned large language model was too large to upload onto GitHub. We have provided the training script for you to obtain the model with its respective tokenizer. Please refer to [archive/QA_LLM.ipynb](https://github.com/stoyonaga/EECS6414_SocialNetworks/blob/main/archive/Twitter/QA_LLM.ipynb) and use [datasets/qa_data.json](https://github.com/stoyonaga/EECS6414_SocialNetworks/blob/main/datasets/qa_data.json) as the input file. You should place the model and tokenizer in a model directory that resides within the root of the project.
+
+3. Once you have the model and tokenizer, delete qa.py and replace it with qa_llm_functionality.py. Do note that you must rename the latter back into qa.py for everything to work as expected.
+
+**Note:** If you have any problems getting the application running, please feel free to reach out to me 🙂!
 
 ## Final Deliverables
 - For access to our written report, please contact me! :)
